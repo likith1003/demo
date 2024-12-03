@@ -53,6 +53,7 @@ def user_login(request: HttpRequest) -> HttpResponse:
         if user and user.is_active:
             auth_login(request, user)
             request.session['username'] = un
+            print('hiiii hello ')
             return HttpResponseRedirect(reverse('home'))
         messages.error(request, 'Invalid credentials')
 
