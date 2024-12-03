@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block body %}
+<style>
+  body {
+      background-color: #badef5;
+      background-size: cover; 
+      background-repeat: no-repeat;
+      background-position: center center; 
+      font-family: Arial, sans-serif;
+      height: 100vh; 
+      margin: 0;
+  .container h1 {
+      color: red; 
+      text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; 
+      font-size: 3em; 
+  }
+
+  .container p {
+      color: red; 
+      text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; 
+      font-size: 1.5em; 
+  }
+</style>
+
+<div class="container mt-5">
+    <h1>Welcome to Home Page</h1>
+    <p>This is the home page content.</p>
+</div>
+{% endblock body %}

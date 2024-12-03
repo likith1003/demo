@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}
+Registration Page  
+{% endblock title %}
+
+{% block body %}
+  <h1>Registration Page</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{EIFO.as_p}}
+        {{EUFO.as_p}}
+        <input type="submit" value="Register">
+    </form>
+{% endblock body %}
